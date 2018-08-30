@@ -1,0 +1,245 @@
+/* ================================
+RESETS
+================================ */
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+figure{
+  margin: 0;
+}
+
+input{
+  box-shadow: none;
+  border: none;
+  font-size: inherit;
+  padding: 1em 2em;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+
+/* ================================
+ALLGEMEINE EINSTELLUNGEN
+================================ */
+html{
+  font-size: 62.5%;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  color: #555555;
+  font-size: 1.6rem;
+  font-family: "Helvetica", Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+
+/* ================================
+HELPER CLASSES
+================================ */
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.panel{
+  padding: 5% 0;
+}
+
+
+
+/* ================================
+TYPOGRAPHY
+================================ */
+h1{
+  font-size: 5.4rem;
+  line-height: 1;
+}
+
+h2{
+  color: #014b7c;
+}
+
+.largeText{
+  font-size: 2.4rem;
+}
+
+
+
+/* ================================
+HEADER
+================================ */
+.logo{
+  margin-right: 8rem;
+}
+
+.logo,
+.mainMenu{
+  display: inline-block;
+}
+
+.mainMenu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainMenu li{
+  display: inline-block;
+}
+
+.mainMenu a{
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.mainMenu a:hover{
+  color: #014b7c;
+}
+
+
+
+/* ================================
+START
+================================ */
+#start{
+  background-image: url("../img/home-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+}
+
+#start h1,
+#start p{
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* ================================
+FEATURES
+================================ */
+#features{
+  background: rgba(0, 0, 0, 0.025);
+}
+
+#features .container{
+  display: flex;
+}
+
+.feature{
+  flex-basis: 33.33%;
+  margin-right: 4rem;
+  text-align: center;
+}
+
+.feature:last-of-type{
+  margin-right: 0;
+}
+
+
+
+/* ================================
+VIDEO
+================================ */
+#video h3{
+  color: #014b7c;
+  font-size: 4.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#video .container{
+  max-width: 960px;
+}
+
+#video p{
+  color: #014b7c;
+  font-size: 2rem;
+}
+
+
+
+/* ================================
+NEWSLETTER
+================================ */
+#newsletter{
+  background: #f2f6f8;
+  text-align: center;
+}
+
+#newsletter p{
+  color: #014b7c;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0;
+}
+
+#newsletter input{
+  display: inline-block;
+}
+
+#newsletter input[type="submit"]{
+  background: #014b7c;
+  color: #fff;
+  font-weight: 700;
+  margin-left: -3px;
+}
+
+#newsletter input[type="text"]{
+  padding: 1em;
+}
+
+#newsletter input[type="text"]:focus{
+  border-bottom: 3px solid #014b7c;
+}
+
+
+/* ================================
+FOOTER
+================================ */
+#siteFooter{
+  text-align: center;
+}
+
+
+
+/* ================================
+MEDIA QUERIES
+================================ */
+@media (max-width: 768px){
+
+  .container{
+    max-width: 560px !important;
+  }
+
+  #features .container{
+    flex-direction: column;
+  }
+
+  .feature{
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+
+  .feature:last-of-type{
+    margin-bottom: 0;
+  }
+
+}
