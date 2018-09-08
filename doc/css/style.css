@@ -50,7 +50,7 @@ HELPER CLASSES
 ================================ */
 .container{
   width: 90%;
-  max-width: 1440px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -135,6 +135,7 @@ START
 #start{
   background-image: url("../img/home-bg.png");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   color: #fff;
   min-height: 100vh;
