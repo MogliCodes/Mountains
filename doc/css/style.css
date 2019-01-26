@@ -139,6 +139,8 @@ START
   background-attachment: fixed;
   color: #fff;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #start h1,
@@ -155,6 +157,13 @@ FEATURES
   background: rgba(0, 0, 0, 0.025);
 }
 
+#features.is-visible .feature{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 #features .container{
   display: flex;
 }
@@ -163,12 +172,37 @@ FEATURES
   flex-basis: 33.33%;
   margin-right: 4rem;
   text-align: center;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
 }
+
+.feature:nth-of-type(1){
+  animation-delay: 0;
+}
+
+.feature:nth-of-type(2){
+  animation-delay: 300ms;
+}
+
+.feature:nth-of-type(3){
+  animation-delay: 600ms;
+}
+
 
 .feature:last-of-type{
   margin-right: 0;
 }
 
+
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 
 /* ================================
